@@ -17,3 +17,5 @@
 	st = status
 [github]
 	user = deepakjois
+[branch "master"]
+	rebase = true
