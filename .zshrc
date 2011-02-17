@@ -20,3 +20,14 @@ export ZSH_THEME="robbyrussell"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+
+# Disable precmd, preexec to override title related tweaks
+# in order to make tmux play nice.
+# http://tldp.org/HOWTO/Xterm-Title.html
+function precmd {
+}
+
+function preexec {
+}
+
+
