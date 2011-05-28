@@ -1,0 +1,5 @@
+# Always color, even if piping to a filter
+--color
+
+# Use "less -r" as my pager
+--pager=LESS=FSRX less -r
