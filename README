@@ -1,13 +1,20 @@
-## Setting up a new Mac
-* Copy ssh keys from another peer
+* Copy ssh keys from another peer and update authorized_keys
 * Install XCode
+* Important Mac Apps
+** TextMate.app w/ Inconsolate
+** Divvy.app
+** Google Chrome.app
+** PeepOpen.app
+** SuperDuper!.app
+** The Unarchiver.app
+** iStat Menus.app
+** Transmit.app
 * Install [homebrew](https://github.com/mxcl/homebrew)
-* Install foundational apps
+* Install foundational apps and things from [git repo](http://github.com/deepakjois)
 ** Emacs.app
-** zsh
-* Install things from [git repo](http://github.com/deepakjois)
-** my-emacs
+** my-emacs (better to copy from peer till subtree nonsense is fixed)
 ** oh-my-zsh
+** zsh
 ** dotfiles
 * Install from homebrew
 ** ruby
@@ -15,14 +22,8 @@
 ** git
 ** tmux
 ** wget
-** zsh
 ** s3cmd
 ** go
-** haskell-platform
-** mpc
-** mpd
-** ncmpc
-* Install zsh along with oh-my-zsh
 * Install ruby gems
 ** heel
 * Install other stuff
@@ -39,5 +40,4 @@
 ** iStat Menus.app
 ** Transmit.app
 ** >cdto
-
 
