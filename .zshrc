@@ -21,6 +21,10 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+export DISABLE_AUTO_UPDATE=true
+export DISABLE_AUTO_TITLE=true
+
+
 # Disable precmd, preexec to override title related tweaks
 # in order to make tmux play nice.
 # http://tldp.org/HOWTO/Xterm-Title.html
