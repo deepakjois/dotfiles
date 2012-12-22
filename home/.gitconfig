@@ -9,13 +9,15 @@
 	tool = opendiff
 [core]
   whitespace = trailing-space,space-before-tab,indent-with-non-tab,cr-at-eol
-	excludesfile = /home/jois/.gitignore
+	editor = vim
+	excludesfile = /Users/deepak/.gitignore
 [alias]
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 	co = checkout
 	br = branch
 	ci = commit
 	st = status
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 [github]
 	user = deepakjois
 [branch "master"]
