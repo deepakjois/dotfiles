@@ -18,7 +18,15 @@
 	ci = commit
 	st = status
     hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	g = grep --break --heading --line-number
 [github]
 	user = deepakjois
 [branch "master"]
 	rebase = true
+[rebase]
+	autostash = true
+[push]
+	default = nothing
+[grep]
+	extendRegexp = true
+	lineNumber = true

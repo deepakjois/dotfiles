@@ -23,4 +23,6 @@ source $ZSH/oh-my-zsh.sh
 
 export DISABLE_AUTO_TITLE=true
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+# PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+eval "$(rbenv init -)"
+
