@@ -3,6 +3,9 @@
 * Install Dropbox
 * Install XCode (try installing XCode with homebrew first)
 * Copy ssh keys from another peer and update authorized_keys
+* Use homesick to clone home repo
+* Install zsh, oh-my-zsh and add the local zsh config file
+* Clone my-vim, update submodules, symlink myvim to .vim and myvim/.vimrc to .vimrc
 * Important Mac Apps
 ** TextMate.app w/ Inconsolate
 ** Macvim
@@ -12,19 +15,26 @@
 ** The Unarchiver.app
 ** iStat Menus.app
 ** Jumpcut
-* Install [homebrew](https://github.com/mxcl/homebrew)
-* Install foundational apps and things from [git repo](http://github.com/deepakjois)
-** oh-my-zsh
-** zsh
-** dotfiles
-** homesick
+** VLC
+** uTorrent
+** Lightroom
+** Cyberduck
+** Skype
+** SelfControl
+** XeTeX
+** Amazon MP3 Importer and Amazon MP3 Player
+** Spotify
 * Install from homebrew
-** ruby
 ** ack
 ** git
+** mercurial
 ** tmux
 ** wget
-** s3cmd
+** s3cmd (copy keys from peer)
 ** go
-** haskell
+** unrar
 ** rbenv and ruby
+** haskell-platform
+** kindlegen
+* Setup website
+* Clone relevant personal repos
