@@ -24,6 +24,7 @@
 ** XeTeX
 ** Amazon MP3 Importer and Amazon MP3 Player
 ** Spotify
+** Vagrant, VirtualBox and Ubuntu
 * Install from homebrew
 ** ack
 ** git
