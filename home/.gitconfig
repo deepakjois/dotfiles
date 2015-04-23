@@ -26,7 +26,9 @@
 [rebase]
 	autostash = true
 [push]
-	default = nothing
+	default = current
 [grep]
 	extendRegexp = true
 	lineNumber = true
+[credential]
+	helper = osxkeychain
