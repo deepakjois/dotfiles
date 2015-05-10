@@ -12,6 +12,8 @@
     - VLC
     - Dropbox
     - itsycal
+    - flux
+    - android-file-transfer
     - divvy
     - textmate
     - jumpcut
