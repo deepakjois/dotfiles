@@ -1,3 +1,5 @@
 alias site="cd ~/code/personal/website"
 alias mvv="mvim -v"
-
+alias mvim="mvim --remote-silent"
+# After each command, append to the history file and reread it
+export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
