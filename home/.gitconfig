@@ -9,7 +9,7 @@
 	tool = opendiff
 [core]
   whitespace = trailing-space,space-before-tab,indent-with-non-tab,cr-at-eol
-	editor = vim
+	editor = mate -w
 	excludesfile = /Users/deepak/.gitignore
 [alias]
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
@@ -32,3 +32,4 @@
 	lineNumber = true
 [credential]
 	helper = osxkeychain
+	UseHttpPath = true
