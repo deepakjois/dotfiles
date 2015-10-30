@@ -1,10 +1,20 @@
 alias site="cd ~/code/personal/website"
 alias code="cd ~/code/personal/"
 alias crs="cd ~/Movies/courses"
-alias mvv="/usr/bin/mvim -v"
-alias mvim="/usr/bin/mvim --remote-silent"
+alias mvv="/usr/local/bin/mvim -v"
+alias mvim="/usr/local/bin/mvim --remote-silent"
 # resize history size
-export HISTSIZE=50000
+shopt -s histappend
+export HISTFILESIZE=
+export HISTSIZE=
+HISTCONTROL=ignoreboth
+shopt -s cmdhist
+# export HISTTIMEFORMAT="[%F %T] "
+# export HISTFILE=~/.bash_eternal_history
 export EDITOR="mate -w"
 # After each command, append to the history file and reread it
 export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
+
+smartresize() {
+   mogrify -path $3 -filter Triangle -define filter:support=2 -thumbnail $2 -unsharp 0.25x0.08+8.3+0.045 -dither None -posterize 136 -quality 82 -define jpeg:fancy-upsampling=off -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB $1
+}
