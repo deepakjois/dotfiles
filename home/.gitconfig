@@ -21,8 +21,6 @@
 	g = grep --break --heading --line-number
 [github]
 	user = deepakjois
-[branch "master"]
-	rebase = true
 [rebase]
 	autostash = true
 [push]
@@ -33,3 +31,5 @@
 [credential]
 	helper = osxkeychain
 	UseHttpPath = true
+[ghi]
+	token = !security find-internet-password -a deepakjois -s github.com -l 'ghi token' -w
