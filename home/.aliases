@@ -8,9 +8,9 @@ alias mvim="/usr/local/bin/mvim --remote-silent"
 
 # resize history size
 shopt -s histappend
-export HISTFILESIZE=
-export HISTSIZE=
-HISTCONTROL=ignoreboth
+export HISTFILESIZE=-1
+export HISTSIZE=-1
+HISTCONTROL=ignoreboth:erasedups
 shopt -s cmdhist
 # After each command, append to the history file and reread it
 export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
@@ -25,8 +25,8 @@ smartresize() {
 
 # ledger aliases
 alias lb="ledger -b `date '+%b'` -w b"
-alias lbe="ledger -b `date '+%b'` -w b Expenses"
-alias lre="ledger -b `date '+%b'` -w r Expenses"
+alias lbe="ledger -b `date '+%b'` -w b Expenses and not \\(Expenses:NonRoutine\\)"
+alias lre="ledger -b `date '+%b'` -w r Expenses and not \\(Expenses:NonRoutine\\)"
 alias lr="ledger -b `date '+%b'` -w r"
 
 # PDF cat
