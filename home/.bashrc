@@ -63,6 +63,6 @@ alias mvim="/usr/local/bin/mvim --remote-silent"
 export EDITOR="mate -w"
 
 # Path
-export PATH=~/.local/bin:$PATH
+export PATH=~/.local/bin:/Applications/ghc-7.10.3.app/Contents/bin:$PATH
 
 
