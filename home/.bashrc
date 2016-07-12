@@ -20,6 +20,15 @@ shopt -s cmdhist
 # After each command, append to the history file and reread it
 export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
 
+# Colors
+# colored grep
+alias grep='grep --color=auto'
+export GREP_COLOR='1;33'
+
+# colored ls
+export LSCOLORS='Gxfxcxdxdxegedabagacad'
+alias ls='ls -G'
+
 # Git aliases
 alias ga='git add'
 alias gst='git status'
@@ -49,6 +58,8 @@ alias lb="ledger -b `date '+%b'` -w b"
 alias lbe="ledger -b `date '+%b'` -w b Expenses and not \\(Expenses:NonRoutine\\)"
 alias lre="ledger -b `date '+%b'` -w r Expenses and not \\(Expenses:NonRoutine\\)"
 alias lr="ledger -b `date '+%b'` -w r"
+alias lave="ledger -MAn r Expenses"
+alias lavr="ledger -MAn r Expenses and not \\(Expenses:NonRoutine\\)"
 
 # PDF cat
 alias pdfjoin="/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py"
@@ -62,7 +73,15 @@ alias mvim="/usr/local/bin/mvim --remote-silent"
 # Default editor
 export EDITOR="mate -w"
 
+
+
+# Golang
+export GOPATH=~/.gopath
+
+# Ruby (local installation)
+eval "$(rbenv init -)"
+
 # Path
-export PATH=~/.local/bin:/Applications/ghc-7.10.3.app/Contents/bin:$PATH
+export PATH=$GOPATH/bin/:~/.local/bin:/Applications/ghc-7.10.3.app/Contents/bin:$PATH
 
 
