@@ -31,7 +31,7 @@ alias ls='ls -G'
 
 # Git aliases
 alias ga='git add'
-alias gst='git status'
+alias gst='git status --short --branch'
 alias gp='git push'
 alias gc='git commit -v'
 alias gca='git commit -v -a'
