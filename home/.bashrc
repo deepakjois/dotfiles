@@ -17,8 +17,6 @@ export HISTFILESIZE=
 export HISTSIZE=
 HISTCONTROL=ignoreboth:erasedups
 shopt -s cmdhist
-# After each command, append to the history file and reread it
-export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
 
 # Colors
 # colored grep
@@ -64,24 +62,31 @@ alias lavr="ledger -MAn r Expenses and not \\(Expenses:NonRoutine\\)"
 # PDF cat
 alias pdfjoin="/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Resources/join.py"
 
-alias site="cd ~/code/personal/website"
 alias code="cd ~/code/personal/"
 alias crs="cd ~/Movies/courses"
 alias mvv="/usr/local/bin/mvim -v"
-alias mvim="/usr/local/bin/mvim --remote-silent"
+alias mvim="/usr/local/bin/mvim --remote"
 
 # Default editor
 export EDITOR="mate -w"
-
-
 
 # Golang
 export GOPATH=~/.gopath
 
 # Ruby (local installation)
-eval "$(rbenv init -)"
+# eval "$(rbenv init -)"
+
+pathmunge () {
+if ! echo $PATH | egrep -q "(^|:)$1($|:)" ; then
+   if [ "$2" = "after" ] ; then
+      PATH=$PATH:$1
+   else
+      PATH=$1:$PATH
+   fi
+fi
+}
 
 # Path
-export PATH=$GOPATH/bin/:~/.local/bin:/Applications/ghc-7.10.3.app/Contents/bin:$PATH
 
+pathmunge $GOPATH/bin:$HOME/.local/bin:$HOME/.lua/bin
 
